@@ -1,2 +1,2 @@
-9e7a989, Gorjan Spirovski, 20-05-2023, 23-05-2023
-a3da9730, Gorjan, 29-05-2023, 28-06-2023
+9e7a989, Gorjan Spirovski, 20-05-2023, 23-06-2023
+a3da9730, ime_prezime, 06-06-2023, 01-01-1970

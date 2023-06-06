@@ -18,7 +18,7 @@ import serial
 import datetime
 
 # Construct the file path relative to the base directory
-file_path = "/Users/gorjanspirovski/Desktop/Ivica app/pythonProject/data/card_ids.txt"
+file_path = "/Users/gorjanspirovski/Desktop/Apps/Gym/pythonProject/data/card_ids.txt"
 
 baud_rate = 9600
 
@@ -72,9 +72,9 @@ try:
                 # Card ID does not exist, add it to the file
                 from_date = datetime.date.today().strftime("%d-%m-%Y")
                 #to_date = (datetime.date.today() + datetime.timedelta(days=30)).strftime("%d-%m-%Y")
-                existing_card_data.append([data, 'ime_prezime', from_date, 'to_date'])
+                existing_card_data.append([data, 'ime_prezime', from_date, '01-01-1970'])
                 file = open(file_path, 'a')
-                file.write(', '.join([data, 'ime_prezime', from_date, 'to_date']) + '\n')
+                file.write(', '.join([data, 'ime_prezime', from_date, '01-01-1970']) + '\n')
                 file.close()
                 response = '0'  # Card ID does not exist
 
